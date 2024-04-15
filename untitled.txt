@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alumnos de la felipe</title>
+</head>
+<body>
+    <h1>Calcular Alumnos</h1>
+    <form method="post" action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="Maria" required><br><br>
+        <label for="edad">Edad:</label>
+        <input type="21" id="edad" name="edad" required><br><br>
+        <label for="curso">Curso:</label>
+        <input type="2do cuatrimestre" id="curso" name="Imformatica" required><br><br>
+        <input type="submit" value="Calcular">
+    </form>
+
+
+        <input type="text" id="nombre" name="Miguel" required><br><br>
+        <label for="edad">Edad:</label>
+        <input type="23" id="edad" name="edad" required><br><br>
+        <label for="curso">Curso:</label>
+        <input type="8vo cuatrimestre" id="curso" name="Contabilidad" required><br><br>
+        <input type="submit" value="Calcular">
+    </form>
+    
+    
+        <input type="text" id="nombre" name="Anahy" required><br><br>
+        <label for="edad">Edad:</label>
+        <input type="22" id="edad" name="edad" required><br><br>
+        <label for="curso">Curso:</label>
+        <input type="8vo cuatrimestre" id="curso" name="Educación" required><br><br>
+        <input type="submit" value="Calcular">
+    </form>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Obtener los datos del formulario
+        $nombre = $_POST["nombre"];
+        $edad = $_POST["edad"];
+        $curso = $_POST["curso"];
+
+        // Mostrar los datos
+        echo "<h2>Datos del alumno:</h2>";
+        echo "<p><strong>Nombre:</strong> $nombre</p>";
+        echo "<p><strong>Edad:</strong> $edad años</p>";
+        echo "<p><strong>Curso:</strong> $curso</p>";
+    }
+    ?>
+</body>
+</html>
+
